@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Multi Meter Converter</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label class="tog" for="check"><img width="30px" src="./images/menu-button.svg" alt="check"></label>
+        <label><img class="logo" src="./images/logo.png" alt="logo"></label>
+        <nav class="nav">
+            <div class="contacts">
+                <a href="https://github.com/Jubemi-Anthony">
+                    <img src="./images/github.svg" alt="github">
+                </a>
+                <a href="https://twitter.com/AnthonyJubemi">
+                    <img src="./images/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://facebook.com/Jubemi.Genius">
+                    <img src="./images/facebook.svg" alt="facebook">
+                </a>
+                <span>
+                    <img id="google" src="./images/google.svg" alt="google">
+                </span>
+                <a href="wa.link/x3oscy">
+                    <img src="./images/whatsapp.svg" alt="whatsapp">
+                </a>
+                <a href="https://www.linkedin.com/in/jubemi-anthony-pajiah-626b7323b/">
+                    <img src="./images/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://t.me/Anthony_Jubemi">
+                    <img src="./images/telegram.svg" alt="telegram">
+                </a>
+                <a href="https://www.instagram.com/jubemi_anthony/">
+                    <img src="./images/instagram.svg" alt="instagram">
+                </a>                            
+            </div>
+             <ul class="links">
+                <li><a class="blue" href="#">Home</a></li>
+                <li><button id="project">Projects</button></li>
+                <li><button id="page">Page Info</button></li>
+                <li><button id="aboutUs">About Us</button></li>
+            </ul>
+            <button id="mail">
+                <img class="icon" src="./images/star.svg" alt="star">
+                Send a mail
+            </button>
+        </nav>
+    </header>
+
+    <div class="hidden" id="projects">
+        <div class="control">
+            <img id="remove4" src="./images/x-circle-fill.svg" alt="cancel">
+            <h1>Some of my Projects</h1>
+            <div class="projectz">
+                <div class="card">
+                    <h3 class="blue">Todo List</h3>
+                    <div class="top">
+                        <img src="./images/todo.png" alt="todo">
+                    </div>
+                    <p>Todo List fun colorful site</p>
+                    <a class="card-a" href="./todolist/todo.html">
+                        <img src="./images/play-circle-fill.svg" alt="play" class="icon">
+                        Check it out
+                    </a>
+                </div>
+                <div class="card">
+                    <h3 class="blue">Rock Paper Scissors</h3>
+                    <div class="top">
+                        <img src="./images/rpsgame.png" alt="R P S">
+                    </div>
+                    <p>Rock, Paper, Scissors fun colorful game</p>
+                    <a class="card-a" href="./rps/index.html">
+                        <img src="./images/play-circle-fill.svg" alt="play" class="icon">
+                        Check it out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="about">
+        <div class="control">
+            <img id="remove2" src="./images/x-circle-fill.svg" alt="cancel">
+            <h1>About Us</h1>
+        <p>
+            This site was created by <a class="blue" href="https://twitter.com/AnthonyJubemi">Pajiah Jubemi Anthony</a> in partnership with <a class="blue" href="https://twitter.com/Tegs_omat">Omaretsola Oghenetega.</a> <br>
+            I <a class="blue" href="https://facebook.com/Jubemi.Genius">Anthony</a> is currently a student of University Of Benin Nigeria. I have a deep love for coding and I find it amazing; the things one can achieve with a keyboard and good imagination.
+            I love bringing the ideas in my head to reality by sitting down and writing the code. A wise man (ME) once said, <span class="blue">"When  you're addicted to your passion, you won't be limited by your actions."</span><br>
+            Hopefully I get better at this! I hope you enjoy my work &#10084;&#65039; 
+        </p>
+        </div>
+    </div>
+
+    <div class="hidden" id="maill">
+        <div class="control">
+            <img id="remove3" src="./images/x-circle-fill.svg" alt="cancel">
+            <h1>Send a mail</h1>
+            <form
+            action="mailto:jubemipajiah@gmail.com"
+            method="POST"
+            enctype=”text/plain”>
+                <textarea name="sendMail" id="sendMail" cols="30" rows="10"></textarea>
+                <button type="submit" id="sub">
+                    <img class="icon" src="./images/bell-fill.svg" alt="send">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="hidden" id="info">
+        <div class="control">
+            <img id="remove" src="./images/x-circle-fill.svg" alt="cancel">
+            <h1>About The Page</h1>
+            <p>
+            This is a <span class="blue">Multi Unit Converter</span> site.
+             You input a number and select what unit you want to <span class="blue">convert</span> it to. <br>
+              There are <span class="blue"><b>four units</b></span>
+             that you can convert to; <span class="blue">Length, Temperature, Weight, Pressure.</span><br>
+             Under Length, there are <span class="blue"><b>8 units</b></span> which are <span class="blue">Meter, Centi-Meter, Mili-Meter, Kilo-Meter, Mile, Foot, Yard, Inch. </span> <br>
+            Under Temperature, there are <span class="blue"><b>4 units</b></span> which are <span class="blue">Celcius, Kelvin, Rankine, Fahrenheit.</span><br>
+            Under Weight, there are <span class="blue"><b>6 units</b></span> which are <span class="blue">Gram, Kilogram, Ounce, Pound, Carat, Metric-Ton</span><br>
+            and lastly under Pressure, there are <span class="blue"><b>4 units</b></span> which are <span class="blue">Pascal, Torr, Barr, Standard Atmospheric Pressure.</span><br>
+            Enjoy your time here and watch out for more of my <a class="blue" href="https://github.com/Jubemi-Anthony">projects</a>.</p>
+        </div>
+    </div>
+    <main>
+        <section class="container">
+            <div class="top">
+                <h1><span class="blue">Multi</span> Unit Converter</h1>
+            <p>
+                This is a practical fun project done by 
+                <a class="blue" href="https://twitter.com/AnthonyJubemi">Jubemi Anthony Pajiah</a>
+                 and <a class="blue" href="https://twitter.com/Tegs_omat">Omaretsola Oghenetega</a>.
+                  This interface of this site was built with
+                   only HTML and CSS and all other functionalities
+                    were done with Javascript.
+                    The UI design was done by <a href="https://mobile.twitter.com/Kene_san" class="blue">Ekene Praise</a>.
+            </p>
+            </div>
+            <div class="selects">
+                <div class="unit">
+                    <label for="units">Select Unit</label>
+                    <select name="units" id="units">
+                        <option value="Length">Length</option>
+                        <option value="Weight">Weight</option>
+                        <option value="Temperature">Temperature</option>
+                        <option value="Pressure">Pressure</option>
+                    </select>
+                </div>
+                <div class="choose">
+                    <div class="left">
+                        <label>Input</label>
+                        <input id="input" type="number">
+                    </div>
+                    <div class="center">
+                        <label>Choose Unit</label>
+                        <div class="one">
+                            <select name="distance" id="distance-s">
+                                <option value="Meter">Meter</option>
+                                <option value="Yard">Yard</option>
+                                <option value="Centi-Meter">Centi-Meter</option>
+                                <option value="Mili-Meter">Mili-Meter</option>
+                                <option value="Kilo-Meter">Kilo-Meter</option>
+                                <option value="Inch">Inch</option>
+                                <option value="Foot">Foot</option>
+                                <option value="Mile">Mile</option>
+                            </select>
+                            <select class="hidden" name="weight" id="weight-s">
+                                <option value="Gram">Gram</option>
+                                <option value="Kilo-Gram">Kilo-Gram</option>
+                                <option value="Pound">Pound</option>
+                                <option value="Metric-Ton">Metric-Ton</option>
+                                <option value="Ounce">Ounce</option>
+                                <option value="Carat">Carat</option>
+                            </select>
+                            <select class="hidden" name="temperature" id="temperature-s">
+                                <option value="Celcius">Celcius</option>
+                                <option value="Fahrenheit">Fahrenheit</option>
+                                <option value="Kelvin">Kelvin</option>
+                                <option value="Rankine">Rankine</option>
+                            </select>
+                            <select class="hidden" name="pressure" id="pressure-s">
+                                <option value="Pascal">Pascal</option>
+                                <option value="Torr">Torr</option>
+                                <option value="Barr">Barr</option>
+                                <option value="Standard Atmospheric Pressure">Standard Atmospheric Pressure</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button id="conv">
+                            <img class="icon" src="./images/arrow-repeat.svg" alt="convert">
+                            Convert
+                        </button>
+                    </div> 
+                </div>
+            </div>
+            <div class="results">
+                <img id="cancel" src="./images/x-circle-fill.svg" alt="cancel">
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+</html>

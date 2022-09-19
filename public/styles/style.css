@@ -1,0 +1,319 @@
+:root{
+    --main: #2648f6;
+    --text: rgb(119, 116, 116);
+    --light: rgb(216, 213, 213);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+select, input{
+    border: 1px solid;
+    border-color: var(--light);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.icon, #remove, #remove2, #remove3, #remove4{
+    filter:invert(1);
+}
+.hidden{
+    display: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    font-size: 15px;
+}
+
+#about, #info, #maill, #projects{
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    z-index: 9;
+    background-color: black;
+    color: white;
+    border: 1px solid var(--main);
+    border-radius: 20px;
+    line-height: 1.5em;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+#projects{
+    width: 50%;
+    top: 20%;
+    left: 25%;
+}
+
+#about h1, #info h1, #maill h1, #projects h1, #projects h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.control{
+    position: relative;
+}
+#remove, #remove2, #remove3, #remove4{
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    cursor: pointer;
+}
+.card{
+    border: 1px solid white;
+    padding: 5px;
+}
+.card a{
+    width: 140px;
+    height: 35px;
+    margin-left: 30%;
+}
+.contacts img, #cancel, .tog{
+    filter: invert(48%) sepia(93%) saturate(1352%) hue-rotate(560deg) brightness(80%) contrast(150%);
+}
+.contacts{
+    position: absolute;
+    top: 24%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.contacts img{
+    width: 30px;
+}
+.contacts img:hover{
+    width: 35px;
+    transition: 0.5s ease-in-out;
+}
+.projectz{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+#check{
+    display: none;
+}
+#sub{
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.tog{
+    position: absolute;
+    right: 3%;
+    top: 15px;
+    display: none;
+    z-index: 9;
+}
+.blue{
+    color: var(--main);
+}
+.logo{
+    width: 300px;
+    position: absolute;
+    z-index: 9;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+}
+.links{
+    display: flex;
+    gap: 50px;
+}
+.links button{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+#mail, #conv, #sub, .card-a{
+    background-color: var(--main);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4%;
+}
+.top{
+    width: 70%;
+    margin: auto;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+.top h1{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.unit{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+.choose{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.left, .center{
+    display: flex;
+    flex-direction: column;
+}
+.choose label{
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+#conv{
+    margin-top: 13px;
+}
+.results{
+    background-color: #fdfdfd;
+    font-weight: bold;
+    color: black;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 15px;
+    width: 40%;
+    margin: auto;
+    padding: 5px 25px 20px 25px;
+    font-size: 13px;
+    position: relative;
+}
+.result{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#cancel{
+    position: absolute;
+    top: 2;
+    right: 2;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+  
+    .tog{
+        display: block;
+    }
+    .logo{
+        width: 80%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav{
+        position: fixed;
+        background-color: var(--light);
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        bottom: 0%;
+        z-index: 5;
+        transition: 1s;
+        margin-top: 47px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav ul{
+       flex-direction: column;
+       text-align: center;
+    }
+    .nav ul li{
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    #check:checked ~ .nav, .logo{
+        left: 0;
+    }
+    .container{
+        width: 85%;
+    }
+    .top{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .top h1{
+        font-size: 2.1rem;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 1.5em;
+    }
+    .unit{
+        flex-direction: column;
+        margin: 10px 0px;
+        gap: 10px;
+    }
+    .choose{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .choose label{
+        text-align: center;
+    }
+    #conv{
+        margin-top: 5px;
+    }
+    .results{
+        width: 90%;
+    }
+    #about, #info, #maill, #projects{
+        top: 15%;
+        left: 9%;
+        width: 80%;
+    }
+    #projects{
+        width: 80%;
+        top: 10%;
+        left: 10%;
+    }
+    .projectz{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .card .top img{
+        width: 50%;
+    }
+}
